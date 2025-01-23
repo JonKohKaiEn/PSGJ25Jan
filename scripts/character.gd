@@ -9,7 +9,8 @@ var health: int
 
 func _ready() -> void:
 	health = MAX_HEALTH
-
+	$HealthBar.max_value = MAX_HEALTH
+	$HealthBar.value = health
 
 func _process(delta: float) -> void:
 	

@@ -11,6 +11,8 @@ var health: int
 
 func _ready() -> void:
 	health = MAX_HEALTH
+	$HealthBar.max_value = MAX_HEALTH
+	$HealthBar.value = health
 
 
 func _physics_process(delta: float) -> void:
@@ -21,6 +23,7 @@ func _physics_process(delta: float) -> void:
 
 func take_damage(damage: int) -> void:
 	health -= damage
+	$HealthBar.value = health
 	print("Damage taken")
 	
 	if health <= 0:
