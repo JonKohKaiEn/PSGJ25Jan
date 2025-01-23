@@ -1,5 +1,7 @@
-res://scenes/mob.tscn
-res://scripts/mob.gd
 res://scenes/main.tscn
 res://scenes/character.tscn
-res://scripts/character.gd
+res://scenes/mob.tscn
+res://scenes/hurtbox.tscn
+res://scripts/hitbox.gd
+res://scripts/hurtbox.gd
+res://scenes/hitbox.tscn
