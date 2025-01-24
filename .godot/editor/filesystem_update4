@@ -1,7 +1,9 @@
-res://scenes/main.tscn
-res://scenes/character.tscn
-res://scenes/mob.tscn
-res://scenes/hurtbox.tscn
 res://scripts/hitbox.gd
-res://scripts/hurtbox.gd
 res://scenes/hitbox.tscn
+res://scripts/hurtbox.gd
+res://scenes/mob.tscn
+res://scripts/damage_aura.gd
+res://scenes/main.tscn
+res://scripts/mob.gd
+res://scenes/character.tscn
+res://scenes/hurtbox.tscn

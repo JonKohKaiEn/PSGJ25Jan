@@ -6,4 +6,4 @@ signal take_damage(damage)
 
 
 func damage(dmg: int) -> void:
-	pass
+	take_damage.emit(dmg)

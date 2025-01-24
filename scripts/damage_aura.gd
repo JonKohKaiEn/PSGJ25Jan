@@ -1,13 +1,14 @@
-extends Area2D
+extends Node2D
 
 
-@export var DAMAGE_DELAY: float = 1.0
-@export var AURA_RADIUS: float = 50.0
-@export var DAMAGE: int = 1
+@export var damage_delay: float = 1.0
+@export var aura_radius: float = 50.0
+@export var damage: int = 1
 
 func _ready() -> void:
-	$Timer.wait_time = DAMAGE_DELAY
-	$CollisionShape2D.shape.radius = AURA_RADIUS
+	$Timer.wait_time = damage_delay
+	$Hurtbox/CollisionShape2D.shape.radius = aura_radius
+	
 
 
 func _on_timer_timeout() -> void:
@@ -16,4 +17,4 @@ func _on_timer_timeout() -> void:
 
 
 func _on_body_entered(body: Mob) -> void:
-	body.take_damage(DAMAGE)
+	body.take_damage(damage)
