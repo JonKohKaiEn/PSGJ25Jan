@@ -1,9 +1,6 @@
-res://scripts/hitbox.gd
-res://scenes/hitbox.tscn
+res://scripts/health_component.gd
 res://scripts/hurtbox.gd
-res://scenes/mob.tscn
-res://scripts/damage_aura.gd
-res://scenes/main.tscn
-res://scripts/mob.gd
+res://scenes/health_component.tscn
+res://scenes/hitbox.tscn
+res://scripts/hitbox.gd
 res://scenes/character.tscn
-res://scenes/hurtbox.tscn

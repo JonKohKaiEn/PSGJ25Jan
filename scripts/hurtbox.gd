@@ -2,8 +2,9 @@ class_name Hurtbox
 extends Area2D
 
 
-signal take_damage(damage)
+@export var health_component: HealthComponent
 
 
-func damage(dmg: int) -> void:
-	take_damage.emit(dmg)
+func take_damage(damage: int) -> void:
+	if health_component:
+		health_component.take_damage(damage)

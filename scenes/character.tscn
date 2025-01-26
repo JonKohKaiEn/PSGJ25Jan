@@ -1,10 +1,11 @@
-[gd_scene load_steps=22 format=3 uid="uid://nhl0570r1b1h"]
+[gd_scene load_steps=23 format=3 uid="uid://nhl0570r1b1h"]
 
 [ext_resource type="Script" path="res://scripts/character.gd" id="1_7khvl"]
 [ext_resource type="Texture2D" uid="uid://bhbrnspjskuto" path="res://assets/characters/character/rogue spritesheet calciumtrice.png" id="1_qaxr1"]
 [ext_resource type="Script" path="res://scripts/damage_aura.gd" id="3_gfhvy"]
 [ext_resource type="Script" path="res://scripts/hurtbox.gd" id="3_sdvi2"]
 [ext_resource type="Script" path="res://scripts/hitbox.gd" id="5_j1svv"]
+[ext_resource type="Script" path="res://scripts/health_component.gd" id="6_xn83o"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_017jj"]
 atlas = ExtResource("1_qaxr1")
@@ -189,5 +190,8 @@ offset_top = -27.0
 offset_right = 25.0
 offset_bottom = -19.0
 show_percentage = false
+
+[node name="HealthComponent" type="Node2D" parent="."]
+script = ExtResource("6_xn83o")
 
 [connection signal="timeout" from="DamageAura/Timer" to="DamageAura" method="_on_timer_timeout"]
